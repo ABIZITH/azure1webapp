@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari Interactive Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#models">Models</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#configurator">Configurator</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to Ferrari</h1>
+            <p>Experience the thrill of driving a Ferrari</p>
+            <button>Explore Models</button>
+        </section>
+        <section id="models">
+            <h2>Our Models</h2>
+            <ul>
+                <li>
+                    <img src="ferrari-488-gtb.jpg" alt="Ferrari 488 GTB">
+                    <h3>Ferrari 488 GTB</h3>
+                    <p>0-60mph in 3.0 seconds</p>
+                </li>
+                <li>
+                    <img src="ferrari-f8-tributo.jpg" alt="Ferrari F8 Tributo">
+                    <h3>Ferrari F8 Tributo</h3>
+                    <p>0-60mph in 2.9 seconds</p>
+                </li>
+                <li>
+                    <img src="ferrari-portofino.jpg" alt="Ferrari Portofino">
+                    <h3>Ferrari Portofino</h3>
+                    <p>0-60mph in 3.5 seconds</p>
+                </li>
+            </ul>
+        </section>
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li>
+                    <h3>Engine</h3>
+                    <p>V8 or V12 engine options</p>
+                </li>
+                <li>
+                    <h3>Transmission</h3>
+                    <p>7-speed dual-clutch transmission</p>
+                </li>
+                <li>
+                    <h3>Interior</h3>
+                    <p>Leather and Alcantara interior options</p>
+                </li>
+            </ul>
+        </section>
+        <section id="configurator">
+            <h2>Configurator</h2>
+            <form>
+                <label for="model">Select a model:</label>
+                <select id="model">
+                    <option value="488-gtb">Ferrari 488 GTB</option>
+                    <option value="f8-tributo">Ferrari F8 Tributo</option>
+                    <option value="portofino">Ferrari Portofino</option>
+                </select>
+                <label for="color">Select a color:</label>
+                <select id="color">
+                    <option value="rosso-corsa">Rosso Corsa</option>
+                    <option value="nero-ds-1250">Nero DS 1250</option>
+                    <option value="bianco-avus">Bianco Avus</option>
+                </select>
+                <label for="interior">Select an interior:</label>
+                <select id="interior">
+                    <option value="leather">Leather</option>
+                    <option value="alcantara">Alcantara</option>
+                </select>
+                <button>Configure</button>
+            </form>
+            <div id="configured-car">
+                <h2>Your Configured Car</h2>
+                <p id="model-selected"></p>
+                <p id="color-selected"></p>
+                <p id="interior-selected"></p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
